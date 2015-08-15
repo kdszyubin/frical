@@ -15,7 +15,8 @@ MANAGERS = (
 
 SECRET_KEY = 'im-8t^gkj*xi8qn@@wr9xswmaixyz%#_yj!=ix8=$l#*=eq*ic'
 
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = 'True'
+#os.getenv('DEBUG', 'False') == 'True'
 TEMPLATE_DEBUG = os.getenv('TEMPLATE_DEBUG', str(DEBUG)) == 'True'
 
 ALLOWED_HOSTS = (os.getenv('ALLOWED_HOST', '*'),)
@@ -39,6 +40,7 @@ INSTALLED_APPS = (
     'contacts',
     'configs',
     'jobs',
+    'polls',
 
     'django_extensions',
     'storages',
